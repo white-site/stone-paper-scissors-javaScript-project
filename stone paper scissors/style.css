@@ -1,0 +1,148 @@
+/* General body styling */
+body {
+    border: 0cm; /* Removes any default border */
+    margin: 0px; /* Removes default body margin */
+    padding: 0px; /* Removes default body padding */
+    background-Color: hsl(195, 53%, 79%); /* Sets a light blue background color */
+}
+
+/* Styling for the "change mode" button */
+#mode {
+    background-color: rgb(63, 54, 241); /* Sets a blue background color */
+    border-radius: 30px; /* Applies rounded corners */
+    height: 50px; /* Sets a fixed height */
+    width: 100px; /* Sets a fixed width */
+    border: none; /* Removes the default button border */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 15px; /* Sets the font size */
+    color: aliceblue; /* Sets the text color to a light blue */
+    margin-right: 43px; /* Adds space to the right of the button */
+    transition: 1s; /* Smoothly animates changes over 1 second */
+    margin-top: 3%; /* Adds space above the button */
+}
+
+/* Hover effect for the "change mode" button */
+#mode:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6); /* Adds a shadow for a 3D effect */
+    border-radius: 16px; /* Changes the corner radius on hover */
+    font-stretch: 10px; /* This property is not valid in CSS and will have no effect */
+    opacity: 3; /* This will not work as opacity values are between 0 and 1 */
+}
+
+/* Styling for the "New Game" button */
+#newGame {
+    height: 45px; /* Sets a fixed height */
+    width: 88px; /* Sets a fixed width */
+    color: rgb(15, 143, 255); /* Sets the text color to a light blue */
+    background-color: rgb(255, 255, 255); /* Sets a white background */
+    border-color: blue; /* Sets the border color to blue */
+    font-size: 13px; /* Sets the font size */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-colour 1s ease-in-out; /* Animates the background color change */
+    border: solid; /* Sets a solid border style */
+    margin-left: 80%; /* Positions the button to the right */
+    margin-top: 5px; /* Adds space above the button */
+}
+
+/* Hover effect for the "New Game" button */
+#newGame:hover {
+    background-color: rgb(73, 73, 255); /* Changes background color on hover */
+    color: aliceblue; /* Changes text color to a light blue on hover */
+}
+
+/* Styling for the status text message */
+#Stext {
+    font-size: 30px; /* Sets a large font size */
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 0px; /* Removes the top margin */
+}
+
+/* Container for the computer's images */
+.com {
+    height: 100px; /* Sets a fixed height */
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: row; /* This property is not valid, should be `flex-direction: row` to arrange items in a row */
+    margin-left: 350px; /* Pushes the container to the right */
+}
+
+/* Styling for the computer's choice images */
+.Computer {
+    width: 100px; /* Sets a fixed width */
+    height: 100px; /* Sets a fixed height */
+    border-radius: 30%; /* Adds rounded corners */
+    margin-left: 10vh; /* Adds space between images */
+    background-color: aliceblue; /* Sets a light blue background behind the images */
+}
+
+/* Class added by JavaScript to highlight the computer's choice */
+.stone {
+    visibility: 0%; /* This is not a valid CSS property; likely intended to be `opacity: 0` or a different visibility value */
+    box-shadow: 0 0 100px greenyellow; /* Creates a glowing green-yellow shadow */
+}
+
+/* Class for the computer's paper choice highlight */
+.paper {
+    visibility: 0%; /* Invalid property, similar to the above comment */
+    box-shadow: 0 0 100px greenyellow; /* Creates a glowing shadow */
+}
+
+/* Class for the computer's scissors choice highlight */
+.sesiorr {
+    visibility: 0%; /* Invalid property, similar to the above comment */
+    box-shadow: 0 0 100px greenyellow; /* Creates a glowing shadow */
+}
+
+/* Container for the user's images */
+.user {
+    height: 100px; /* Sets a fixed height */
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: row; /* Invalid property, similar to the .com class */
+    margin-left: 350px; /* Pushes the container to the right */
+}
+
+/* Generic styling for image elements */
+.img {
+    width: 200px; /* Sets a fixed width */
+    height: 100px; /* Sets a fixed height */
+}
+
+/* Styling for the user's choice images */
+.User {
+    width: 100px; /* Sets a fixed width */
+    height: 100px; /* Sets a fixed height */
+    border-radius: 30%; /* Adds rounded corners */
+    margin-left: 10vh; /* Adds space between images */
+    background-color: aliceblue; /* Sets a light blue background */
+}
+
+/* Styling for all paragraph elements */
+p {
+    font-size: 30px; /* Sets a large font size */
+    text-align: center; /* Centers the text */
+    margin-top: 15px; /* Adds space above the paragraph */
+    margin-bottom: 15px; /* Adds space below the paragraph */
+}
+
+/* Hover effect for the user's images */
+.User:hover {
+    visibility: 0%; /* Invalid property, likely intended to adjust opacity or visibility */
+    box-shadow: 0 0 100px rgb(255, 170, 33); /* Creates a glowing orange shadow */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+/* Styling for the scoreboard container */
+.score-board {
+    display: flex; /* Uses flexbox for a horizontal layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    font-size: 30px; /* Sets the font size for the scores and labels */
+    margin-top: 30px; /* Adds space above the scoreboard */
+    gap: 5rem; /* Creates a large gap between score sections */
+}
+
+/* Styling for the score numbers */
+#user-score,
+#comp-score,
+#draw {
+    font-size: 30px; /* Ensures the score numbers have a consistent size */
+}
